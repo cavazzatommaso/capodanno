@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="./bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="">
+
+    <header class="d-flex justify-content-center p-4 bg-primary text-white" id="go">
+        <h1>Aggiungi canzone</h1>
+    </header>
+    <div class="container">
+        <h4 class="p-4">Richiedi una canzone direttamente al dj</h4>
+        <div class="form-group">
+            <label for="canzone">Nome canzone</label>
+            <input type="text" class="form-control" id="canzone" aria-describedby="emailHelp" placeholder="All star">
+        </div>
+        <div class="form-group">
+            <label for="artista">Artista</label>
+            <input type="text" class="form-control" id="artista" aria-describedby="emailHelp" placeholder="Smash Mouth">
+        </div>
+        <button id="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Richiedi</button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header bg-success">
+                        <h4 class="modal-title">Ok!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>La canzone che hai scelto verra messa in coda</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="./jquery.js"></script>
+    <script src="./bootstrap.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
